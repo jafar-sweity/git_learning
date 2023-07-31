@@ -42,3 +42,21 @@
 
 
 ### Getting Started : 
+- **git add :**  command adds a change in the working directory to the staging area. 
+- **git reset  :** command is used to undo a git add
+- **git commit :** is a fundamental command in Git that records the changes you have staged in the staging area and creates a new commit in the version history of your project. Commits are essential in Git, as they represent snapshots of your project at different points in time.
+     - **Common options :** 
+         - git commit : Commit the staged snapshot. This will launch a text editor prompting you for a commit message. 
+         - git commit -a : Commit a snapshot of all changes in the working directory. This only includes modifications to tracked files
+         - git commit -m "commit message" :A shortcut command that immediately creates a commit with a passed commit message
+         - git commit --amend : This option adds another level of functionality to the commit command. Passing this option will modify the last commit. Instead of creating a new commit, staged changes will be added to the previous commit. 
+
+- **git diff :** command in Git is used to show the differences between different versions of files in your repository.
+- **git stash :** command takes your uncommitted changes (both staged and unstaged), saves them away for later use, and then reverts them from your working copy 
+    - Note that the stash is local to your Git repository; stashes are not transferred to the server when you push.
+    - Alternatively, you can reapply the changes to your working copy and keep them in your stash with git stash apply
+    - ou can include changes to ignored files as well by passing the -a option (or --all) when running git stash.
+    -  annotate your stashes with a description, using git stash save "message"
+    - You can view a summary of a stash with git stash show ,Or pass the -p option  to view the full diff of a stash 
+    - Creating a branch from your stash : `git stash branch add-stylesheet stash@{1}`
+- **.gitignore :** is a configuration file used in Git to specify intentionally untracked files and directories that should be ignored and not considered for version control
