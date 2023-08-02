@@ -8,6 +8,7 @@
 | Git Repository     | Stores the commit history and the contents of the project. Commits represent snapshots of the project at specific points in time. Each commit points to a tree, which points to the files' content.   |
 
 ##  About Git - Git Tutorial for Beginners :
+- [Task Url](https://github.com/eficode-academy/git-katas/tree/master/basic-staging)
 - **Recording Changes to the Repository :**
     - when want to start making changes and committing snapshots of those changes into your repository each time the project reaches a state you want to record.
     - Remember that each file in your working directory can be in one of two states:
