@@ -43,3 +43,45 @@
     - Alternatively, you can type your commit message inline with the commit command by specifying it after a `-m` flag
 - **Removing Files :**
     - To remove a file from Git, you have to remove it from your tracked files (more accurately, remove it from your staging area) and then commit. The git rm command does that, and also removes the file from your working directory so you don’t see it as an untracked file the next time around.
+
+
+### The Task In Github : 
+**Overwrite the content of file.txt with the command echo 2 > file.txt (or sc file.txt '2' in PowerShell)**
+
+1. `git diff` will show the differences between the current state of the file in the working directory and the last committed state in the Git repository.
+
+2. `git diff --staged` (or `git diff --cached`) will show the differences between the current state of the file in the staging area (index) and the last committed state in the Git repository. If this is blank, it means you have not staged any changes yet.
+
+3. Stage your changes from the working directory using the command `git add file.txt`.
+
+4. After staging the changes, running `git diff` will still show the differences between the current state of the file in the working directory (which has not changed since staging) and the last committed state.
+
+5. Running `git diff --staged` will be blank since you have just staged the changes, and the staging area (index) is now in sync with the last commit.
+
+6. Overwrite the content of `file.txt` again with the command `echo 3 > file.txt` (or `sc file.txt '3'` in PowerShell).
+
+7. Running `git diff` will show the differences between the current state of the file in the working directory and the last committed state in the Git repository. It will show the changes made from the content "2" to the content "3".
+
+8. Running `git diff --staged` will still be blank because the changes made in Step 6 are not yet staged.
+
+9. Now, you observed that `file.txt` is present twice in the output of `git status`. This is because you have both the modified (unstaged) version and the changed (staged) version of `file.txt`.
+
+10. To unstage the changes, run `git restore --staged file.txt`.
+
+11. Running `git status` now will show that the changes are no longer staged.
+
+12. Stage the changes again with the command `git add file.txt`.
+
+13. Make a commit with the staged changes using the command `git commit -m "Commit message"`.
+
+14. After the commit, you overwrite the content of `file.txt` with the command `echo 4 > file.txt` (or `sc file.txt '4'` in PowerShell).
+
+15. The content of `file.txt` is now "4".
+
+16. Running `git status` will show that `file.txt` has been modified since the last commit.
+
+17. To discard the changes made in Step 14, you can run `git restore file.txt`.
+
+18. The content of `file.txt` will revert to the state it was in after the previous commit, so it will have the content "2".
+
+19. Running `git status` will show that `file.txt` has been modified, but the changes are not staged. It will also show the changes that were previously staged in Step 12.
