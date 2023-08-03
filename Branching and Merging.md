@@ -31,7 +31,8 @@ Git merge conflicts
 ### Git merge conflicts : 
 - Conflicts generally arise when two people have changed the same lines in a file, or if one developer deleted a file while another developer was modifying it. In these cases, Git cannot automatically determine what is correct
 - **How to identify merge conflicts :**  As we have experienced from the proceeding example, Git will produce some descriptive output letting us know that a CONFLICT has occcured. We can gain further insight by running the git status command
- - **When Git encounters a merge conflict, it marks the conflicting sections in the affected files using special conflict markers. These markers help identify the areas of the file where conflicts have occurred and distinguish the conflicting changes from each branch. The conflict markers consist of the following three part** 
+ - **When Git encounters a merge conflict, it marks the conflicting sections in the affected files using special conflict markers. These markers help identify the areas of the file where conflicts have occurred and distinguish the conflicting changes from each branch. The conflict markers consist of the following three part**
+ - 
  | Conflict Markers    |    Explanation                                                                                           |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<<<<<<< HEAD`       | The `<<<<<<< HEAD` marker indicates the beginning of the conflicting section from the current branch (the branch you are currently on, typically the branch you are merging into). Everything between this marker and the `=======` marker represents the changes in your current branch.                |
