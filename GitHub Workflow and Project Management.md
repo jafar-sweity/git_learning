@@ -9,6 +9,7 @@
     - feature : Feature branches are created for developing new features or enhancements.
     - release : Release branches are created when preparing for a new release
     - hotfix  : Hotfix branches are used for addressing critical production issues
+      
 **Workflow Steps :**
 
 - New features are developed in feature branches and merged back into the develop branch.
