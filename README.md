@@ -10,6 +10,7 @@ Welcome to the Learning Sprint  repository! This repository contains detailed ex
 - [Branching and Merging](https://github.com/jafar-sweity/git_learning/blob/master/Branching%20and%20Merging.md)
 - [GitHub Workflow and Project Management](https://github.com/jafar-sweity/git_learning/blob/master/GitHub%20Workflow%20and%20Project%20Management.md)
 - [GitHub Actions](https://github.com/jafar-sweity/git_learning/blob/master/GitHub%20Actions.md)
+- [ Git Tips, Tricks, and Best Practices](https://github.com/git-tips/tips#everyday-git-in-twenty-commands-or-so)
 
 ## Introduction to Version Control & Git Basics
 
