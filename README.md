@@ -47,3 +47,10 @@ For inquiries or assistance, you can contact us at [jafar@email.com](mailto:jata
 
 We hope this documentation enhances your understanding of version control and collaborative development practices. Happy coding!
 
+
+## 🔗 resource
+- [Full course](https://www.youtube.com/watch?v=Q6G-J54vgKc)
+- [elzero course](https://www.youtube.com/watch?v=ACOiGZoqC8w&list=PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF&index=2)
+- [intro](https://www.youtube.com/watch?v=Yc8sCSeMhi4)
+- [Mastering Git](https://www.youtube.com/watch?v=TUXmJXw1OJg&list=PLtxOBbrOOPH4zeJLOdRNrP4pGft2IfMgo)
+
